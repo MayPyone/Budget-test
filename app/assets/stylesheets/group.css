@@ -1,0 +1,72 @@
+.group-index .modal-body {
+  margin: 2% 3%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  padding: 3%;
+}
+
+.container-fluid h2 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+nav {
+  margin: 0;
+  background-color: #3378c2;
+  color: white;
+}
+
+.add {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #5fb523;
+}
+
+.add button {
+  margin: 2%;
+  width: 96%;
+  padding: 2%;
+  background-color: #5fb523;
+  border: 1px solid white;
+  color: white;
+}
+
+.add-underline {
+  text-decoration: none;
+  color: white;
+}
+
+.add-group {
+  margin-top: 2%;
+}
+
+.input-field {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.add-group .input-field {
+  margin: 20px;
+}
+
+.create-group {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.input-field label {
+  flex: 0.5;
+  margin-right: 10px;
+}
+
+.modal-body {
+  margin: 2%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}

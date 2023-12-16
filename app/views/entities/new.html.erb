@@ -1,0 +1,32 @@
+<div class="group-index">
+  <nav class="navbar">
+ 
+    <div class="container-fluid">
+    <div><%= link_to group_path(@group), class: "show-link" do %>
+      <i class="fa-solid fa-arrow-left"></i>
+    <% end %></div>
+    
+      <h2>Entity</h2>
+ 
+  </div>
+  </nav>
+<%= form_with model: [@group, @entity], url: group_entities_path(@group),  html: {class:"add-group"} do |form| %>
+  <div class="input-field">
+    <%= form.label :entity_name %>
+    <%= form.text_field :entity_name, placeholder: "entity", required: true %>
+  </div>
+  <br>
+
+  <div class="input-field">
+    <%= form.label :amount %>
+    <%= form.number_field :amount, placeholder: "amount", required: true %>
+  </div>
+
+  <br>
+  <%= form.hidden_field :group_id, value: @entity.group_id %>
+  <div class="create-group">
+    <%= form.submit "Create Entity" %>
+  </div>
+<% end %>
+
+</div>

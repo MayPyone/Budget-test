@@ -1,0 +1,29 @@
+<div class="group-index">
+  <nav class="navbar">
+ 
+    <div class="container-fluid">
+    <div><%= link_to groups_path, class: "show-link" do %>
+      <i class="fa-solid fa-arrow-left"></i>
+    <% end %></div>
+      <h2>CATEGORIES</h2>
+ 
+  </div>
+  </nav>
+<%=form_for @group, html: {class:"add-group"} do |f| %>
+  
+  <div class="input-field">
+    <%= f.label :group_name %>
+    <%= f.text_field :group_name, {required: true} %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :icon %>
+    <%= f.select :icon, Group::ICONS.invert, { include_blank: true }, { required: true, class: "" } %>
+  </div>
+
+  <div class="create-group">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+</div>

@@ -1,0 +1,26 @@
+<div class="group-index">
+<nav class="navbar">
+
+  <div class="container-fluid">
+  <div><%= link_to groups_path, class: "show-link" do %>
+    <i class="fa-solid fa-arrow-left"></i>
+  <% end %></div>
+    <h2>Entities</h2>
+</nav>
+</div>
+<div class='title-entity'>
+<p><%= @group.group_name %></p>
+<p><%= "Total Amount " "#{@total_amount}" %></p>
+</div>
+<% @entities.each do|entity| %>
+    <div class='title-entity'>
+    <p><%= entity.entity_name %></p>
+    <p><%= "Amount: " + entity.amount.to_s %></p>
+    </div>
+<% end %>
+<div class="add">
+<button>
+<%= link_to 'Add a new transaction', new_group_entity_path(@group), class: 'add-underline' %>
+</div>
+</button>
+</div>

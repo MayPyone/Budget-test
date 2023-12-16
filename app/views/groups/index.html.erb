@@ -1,0 +1,22 @@
+<div class="group-index">
+  <nav class="navbar">
+ 
+    <div class="container-fluid">
+      <h2>Groups</h2>
+  </nav>
+  </div>
+  <% @groups.each do |group| %>
+    <%= link_to group_path(group) do %>
+    <div class="modal-body">
+      <div class='icons'><%= content_tag :i, "", class: "fa #{group.icon}" %></div>
+      <div><%= link_to "#{group.group_name}", group_path(group) %></div>
+      <div><%= "$" "#{group.total_amount}" %></div>
+    </div>
+    <% end %>
+  <% end %>
+  
+  <div class="add">
+      <button> <%= link_to 'Add Group', new_group_path , class: 'add-underline' %> </button>
+  </div>
+  </div>
+</div>

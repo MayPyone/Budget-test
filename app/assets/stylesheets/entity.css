@@ -1,0 +1,13 @@
+.title-entity {
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+i {
+  color: white;
+}
+
+.icons i {
+  color: black;
+}

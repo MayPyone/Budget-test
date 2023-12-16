@@ -1,0 +1,50 @@
+@media screen and (min-width: 768px) {
+  .main-container {
+    margin: 0;
+    align-items: center;
+    max-width: 768px;
+    border: 1px solid black;
+  }
+}
+
+body {
+  background-color: #f8f8ff !important;
+} 
+
+.splash-title {
+  align-items: center;
+  margin: 250px 0;
+}
+
+.splash-container h1 {
+  text-align: center;
+}
+
+.splash-inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.splash-inner button {
+  width: 90%;
+  height: 10%;
+  background-color: #3378c2;
+  color: white;
+  padding: 1%;
+}
+
+.signup {
+  text-decoration: none;
+  height: 10%;
+  padding: 1%;
+}
+
+.container-fluid nav {
+  background-color: #3378c2 !important;
+  color: white;
+}
+
+.container-fluid nav a {
+  color: white;
+}
